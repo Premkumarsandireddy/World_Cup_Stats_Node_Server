@@ -1,0 +1,293 @@
+:root{
+
+    --main-radius: 5px;
+    --main-padding:5px;
+    --blue: #1e90ff;
+    --white: #ffffff; 
+    --yellowish: #F7C600;
+    --pinkish:rgb(161, 132, 137);
+    --greenish:rgb(9, 159, 9);
+    --red:rgb(189, 6, 6);
+    --gold:rgb(205, 178, 25);
+    --black:rgb(0, 0, 0);
+    --font_size: 20px;
+    --p_size:30px;
+    --p_family: Verdana, Geneva, Tahoma, sans-serif;
+    --h_family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    " nav nav"
+    " profilephoto  intro"
+    " Skills  Experience"
+    " Project1  Project2"
+    " Certificate  Photo"
+    " Education Achievments"
+    " footer footer";
+    grid-gap:0.5rem;
+    font-family: 'Noto Serif', serif;
+    font-weight: 800;
+    font-size: 1EM;
+    color: #fff;  
+}
+body{
+    margin: 0px;
+}
+#name{
+    padding: 0px;
+    margin:0px;
+    color: #3f324d;
+}
+h1{
+    font-size: 40px;
+    color: var(--black);
+    text-align: center;
+    text-transform:capitalize;
+    text-decoration:solid;
+    color: #842a2a;
+}
+h3{
+    font-size: var(--p_size);
+    color: var(--black);
+    font-family:var(--h_family);
+}
+.nav{
+    display: flex;
+    background: #eca808;
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    
+    
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 40px;
+}
+nav a{
+    text-decoration: none;
+    color:var(--black);
+    font-size:var(--font_size) ; 
+     
+}
+.menu-toggler{
+    display:none;
+    cursor: pointer;
+}
+.bar{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+
+#profilephoto {
+    background: var(--white);
+    grid-area: profilephoto;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    text-align: center;
+    color: #068e85;
+    text-decoration:solid;
+    font-size: large;
+}
+#profilephoto img{
+    height: 150px;
+    width: 120px;
+    border-radius: 50%;
+
+}
+
+
+#intro{
+    background: var(--white);
+    grid-area:intro;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    font-size: var(--p_size);
+    text-align: center;
+    font-family:fantasy;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: var(--black);
+}
+
+
+#Skills{
+    background: var(--white);
+    grid-area:Skills;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    text-align: center;
+    
+}
+#Skills img{
+    height: 200px;
+    width:500px;
+}
+#Experience{
+    background: var(--white);
+    grid-area:Experience;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    text-align: justify;
+    color: var(--black);
+    font-size: 20px;
+}
+#Project1{
+    background: var(--white);
+    grid-area:Project1;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    text-align:left;
+    color:var(--black);
+    font-size: 20px;
+}
+.Projects img{
+    width: 350px;
+    height: 200px;
+    margin-left: 120px;
+}
+#Project2{
+    background: var(--white);
+    grid-area:Project2;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    color: var(--black);
+    text-align:left;
+    font-size: 20px;
+}
+
+#Certificate{
+    
+    grid-area:Certificate;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    text-align: center;
+    color: var(--black);
+    font-size: 20px;
+}
+#Photo img{
+    height:200px;
+    width:500px;
+
+}
+#Photo{
+    background: var(--white);
+    grid-area:Photo;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    text-align: center;
+}
+#Education{
+    background: var(--white);
+    grid-area:Education;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    text-align: left;
+    color:var(--black);
+    font-size: 20px;
+}
+#Education ul{
+    list-style-type: none;   
+}
+#Achievments{
+    background-color: var(--white);
+    grid-area:Achievments;
+    color: var(--black);
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    text-align: left;
+    font-size: 20px;
+}
+footer{
+    background: var(--white);
+    grid-area:footer;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    align-items: center;
+    justify-content: center;
+}
+#contactme img{
+        height:30px;
+        width:30px;
+        margin-right: 15px;
+        justify-content: center;
+        
+}
+.contact{
+    justify-content: center;
+    align-items: center;
+    display:flex
+}
+.contacticons {
+    float: left;
+    padding-left: 30px;
+    height: 30px;
+    width:30px;
+    padding-bottom: 5px;
+}
+
+@media only screen and (max-width:500px) {
+    .container{
+        
+        grid-template-areas: 
+        "nav"
+        "profilephoto"
+        "intro"
+        "Skills"
+        "Experience"
+        "Project1"
+        "Project2"
+        "Certificate"
+        "Photo"
+        "Education"
+        "Achievments"
+        "footer"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        cursor:pointer;
+    }
+    body{
+        width:100%;
+        height: 100%;
+    }
+    nav{
+        display: flex;
+    }
+    .menu-toggler{
+        display:block;
+        cursor: pointer;
+        margin-left:410px;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+    .nav-list.show {
+        display: flex;
+    }
+    
+    footer{
+        background: var(--white);
+        grid-area:footer;
+        border-radius: var(--main-radius);
+        padding: var(--main-padding);
+    }
+
+}
